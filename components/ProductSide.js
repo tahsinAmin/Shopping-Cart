@@ -118,8 +118,12 @@ function ProductSide() {
             </div>
          </div>
          
-         <div className="location border-t-2 border-black">
-            Dhanmondi | Register 1 | New Sale
+         <div className="location border-t-2 border-black flex justify-between pt-2">
+            <p>Dhanmondi | Register 1 | New Sale</p>
+            <div className="flex space-x-2">
+               <button className='bg-white py-1 px-2 rounded-md font-semibold border border-gray-400'>Options</button>
+               <button className='bg-white py-1 px-2 rounded-md font-semibold border border-gray-400'>New Sales</button>
+            </div>
          </div>
 
       </div>
