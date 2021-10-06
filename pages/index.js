@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex px-2 w-full bg-blue-100">
+      <main className="flex px-2 w-full h-full bg-blue-100">
         <ProductSide/>
         <PaymentSide/>
       </main>
