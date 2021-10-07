@@ -10,8 +10,7 @@ export default function Home() {
     const exist = cartItems.find(item => item.id ===product.id);
     const len = cartItems.length;
     if (!exist) {
-      // print({product})
-      setCartItems([...cartItems, {id:len, name:product.name, price:product.price}])
+      setCartItems([...cartItems, {id:len, name:product.name, price:product.price, url:product.url}])
     }
   }
   const onRemove = (product) => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { UserIcon, TrashIcon} from '@heroicons/react/outline'
-import { useState } from 'react'
+import Image from 'next/image'
 
 function Basket({ cartItems, onRemove }) {
    return (
@@ -17,7 +17,8 @@ function Basket({ cartItems, onRemove }) {
             <div key={item.id} className="mx-4 py-2 flex justify-between border-gray-300 border-b-2">
                <div className='flex space-x-4 items-center'>
                   <div className='h-12 w-11 rounded-md border border-gray-400 relative'>
-                     <div className="w-6 rounded-full bg-green-400 text-white text-center absolute -top-2 -right-2">1</div>
+                     <div className="w-6 rounded-full bg-green-400 text-white text-center absolute z-50 -top-2 -right-2">1</div>
+                     <Image src={item.url} layout="fill" />
                   </div>
                   <div className='truncate'>{item.name}</div>
                </div>
