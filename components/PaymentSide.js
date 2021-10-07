@@ -1,11 +1,11 @@
 import React from 'react'
-import CartItems from './CartItems'
+import Basket from './Basket'
 import PaymentInfo from './PaymentInfo'
 
-function PaymentSide() {
+function PaymentSide({ cartItems }) {
    return (
-      <div className='w-4/12 border border-black bg-white'>
-         <CartItems/>
+      <div className='w-4/12 border border-black bg-white flex flex-col pb-6 justify-between'>
+         <Basket cartItems={cartItems}/>
          <PaymentInfo/>
       </div>
    )
